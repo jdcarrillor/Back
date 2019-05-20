@@ -1,0 +1,15 @@
+[{
+    "id": 1,
+    "ciudad": "Bogota",
+    "direccion":"Uniandes",
+    "email":"tvanessahb203@gmail.com",
+    "fisica": "false"
+  },
+  {
+    "id": 2,
+    "ciudad": "Santa Marta",
+    "direccion":"La casa de Santa Marta",
+    "email":"santamarta@gmail.com",
+    "fisica": "true"
+  }
+]

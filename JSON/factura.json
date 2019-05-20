@@ -1,0 +1,26 @@
+[[
+    {
+        "id": 1,
+        "idDestino": 1,
+        "idTienda": 1,
+        "idTarjetaRegalo": 1,
+        "valorCompra": 30000,
+        "formaDePago":"Tarjeta credito",
+        "fechaCompra":"02/03/2019",
+        "destino":"Bogota",
+        "tienda":"Cosechas",
+        "tarjetaRegalo":"Amigos"
+    },
+    {
+        "id": 2,
+        "idDestino": 2,
+        "idTienda": 2,
+        "idTarjetaRegalo": 2,
+        "valorCompra": 87000,
+        "formaDePago":"Efectivo",
+        "fechaCompra":"20/02/2019",
+        "destino":"Cali",
+        "tienda":"BookStore",
+        "tarjetaRegalo":"Agradecimiento"
+    }
+]]

@@ -1,0 +1,203 @@
+{
+	"id": "93a295ef-936e-50a9-b08e-4357f991eea4",
+	"name": "Pruebas Cupon",
+	"description": "",
+	"order": [
+		"18409e2f-2401-7726-7dc7-b7a605e73699",
+		"8d91de7f-c4fc-240e-6987-e8b1f724a560",
+		"ba38536f-3450-d8fe-200c-337c5d2ed5c3",
+		"feb0e505-6c94-3fe8-d5e8-84c6881502f6",
+		"6fc2d91a-6672-ded2-c051-834791b85d1b"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1551654034411,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "18409e2f-2401-7726-7dc7-b7a605e73699",
+			"headers": "Content-Type: application/json\nAuthorization: Basic Og==\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic Og==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/cupones",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "93a295ef-936e-50a9-b08e-4357f991eea4",
+			"data": [],
+			"dataMode": "raw",
+			"name": "GET",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1551654174449,
+			"version": 2,
+			"responses": [],
+			"tests": "tests[\"Exito\"]=responseCode.code==200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "\n    {\n        \n        \"nombre\": \"Toto\",\n        \"origen\": \"Colombia\",\n        \"clasificacion\": \"maletas,ropa,accesorios\",\n        \"descripcion\": \"Marca de ropa, accesorios y maletas de costo medio\",\n        \"productos\": [\n            {\n                \"idProducto\": 4\n            },\n            {\n                \"idProducto\": 3\n            }\n        ]\n    }"
+		},
+		{
+			"id": "6fc2d91a-6672-ded2-c051-834791b85d1b",
+			"headers": "Content-Type: application/json\nAuthorization: Basic Og==\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic Og==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/cupones/3",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "93a295ef-936e-50a9-b08e-4357f991eea4",
+			"data": [],
+			"dataMode": "raw",
+			"name": "DELETE",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1551654345841,
+			"version": 2,
+			"responses": [],
+			"tests": "tests[\"Exito\"]=responseCode.code==200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "  {\n        \n        \"idMarca\": 1,\n        \"idTienda\": 2,\n        \"valor\": 500000,\n        \"fechaVencimiento\": \"10-05-2019\"\n    }"
+		},
+		{
+			"id": "8d91de7f-c4fc-240e-6987-e8b1f724a560",
+			"headers": "Content-Type: application/json\nAuthorization: Basic Og==\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic Og==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/cupones/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "93a295ef-936e-50a9-b08e-4357f991eea4",
+			"data": [],
+			"dataMode": "raw",
+			"name": "GET/DETALLE",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1551654191157,
+			"version": 2,
+			"responses": [],
+			"tests": "tests[\"Exito\"]=responseCode.code==200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "\n    {\n        \n        \"nombre\": \"Toto\",\n        \"origen\": \"Colombia\",\n        \"clasificacion\": \"maletas,ropa,accesorios\",\n        \"descripcion\": \"Marca de ropa, accesorios y maletas de costo medio\",\n        \"productos\": [\n            {\n                \"idProducto\": 4\n            },\n            {\n                \"idProducto\": 3\n            }\n        ]\n    }"
+		},
+		{
+			"id": "ba38536f-3450-d8fe-200c-337c5d2ed5c3",
+			"headers": "Content-Type: application/json\nAuthorization: Basic Og==\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic Og==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/cupones",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "93a295ef-936e-50a9-b08e-4357f991eea4",
+			"data": [],
+			"dataMode": "raw",
+			"name": "POST",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1551654245195,
+			"version": 2,
+			"responses": [],
+			"tests": "tests[\"Exito\"]=responseCode.code==200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \"id\": 3,\n    \"idMarca\": 3,\n    \"idTienda\": 3,\n    \"valor\": 400000,\n    \"fechaVencimiento\": \"12-07-2019\"\n}"
+		},
+		{
+			"id": "feb0e505-6c94-3fe8-d5e8-84c6881502f6",
+			"headers": "Content-Type: application/json\nAuthorization: Basic Og==\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic Og==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/cupones/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Exito\"]=responseCode.code==200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1551654787664,
+			"name": "PUT",
+			"description": "",
+			"collectionId": "93a295ef-936e-50a9-b08e-4357f991eea4",
+			"responses": [],
+			"rawModeData": "  {\n        \n        \"idMarca\": 1,\n        \"idTienda\": 2,\n        \"valor\": 700000,\n        \"fechaVencimiento\": \"10-05-2019\"\n    }"
+		}
+	]
+}

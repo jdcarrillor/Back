@@ -1,0 +1,311 @@
+{
+	"variables": [],
+	"info": {
+		"name": "GiftNowBackEndREST",
+		"_postman_id": "bdf7486f-aa40-f1dd-1a3c-941394090006",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TarjetaRegalo",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:3000/tarjetaRegalo",
+					"request": {
+						"url": "http://localhost:3000/tarjetaRegalo",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"id\": 3,\r\n    \"titulo\": \"¡Feliz Cumpleaños Ricadito!\",\r\n    \"mensaje\":\"Gracias por animarnos bailando chino, nada mejor que tu aparicion en el maincrah.\",\r\n    \"imagenes\":\r\n    [\r\n      {\r\n        \"url\": \"https://i2.wp.com/hybridtechcar.com/wp-content/uploads/2019/01/download-1-44.jpg?w=960&ssl=1\"\r\n      },\r\n      {\r\n        \"url\": \"https://pbs.twimg.com/media/DvX3iU2X0AAwOLU.jpg\"\r\n      }\r\n    ],\r\n    \"plantilla\":\"tarjeta plegable de 2 caras\",\r\n    \"cupones\":\r\n    [\r\n      {\r\n        \"idCupon\":1\r\n      },\r\n      {\r\n        \"idCupon\":2\r\n      }\r\n    ],\r\n    \"productos\":\r\n    [\r\n      {\r\n        \"idProducto\":1\r\n      },\r\n      {\r\n        \"idProducto\":2\r\n      }\r\n    ]\r\n  }\r\n "
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/tarjetaRegalo/2",
+					"request": {
+						"url": "http://localhost:3000/tarjetaRegalo/2",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"id\": 3,\r\n    \"titulo\": \"¡Feliz Cumpleaños Ricadito!\",\r\n    \"mensaje\":\"Gracias por animarnos bailando chino, nada mejor que tu aparicion en el maincrah.\",\r\n    \"imagenes\":\r\n    [\r\n      {\r\n        \"url\": \"https://i2.wp.com/hybridtechcar.com/wp-content/uploads/2019/01/download-1-44.jpg?w=960&ssl=1\"\r\n      },\r\n      {\r\n        \"url\": \"https://pbs.twimg.com/media/DvX3iU2X0AAwOLU.jpg\"\r\n      }\r\n    ],\r\n    \"plantilla\":\"tarjeta plegable de 2 caras\",\r\n    \"cupones\":\r\n    [\r\n      {\r\n        \"idCupon\":1\r\n      },\r\n      {\r\n        \"idCupon\":2\r\n      }\r\n    ],\r\n    \"productos\":\r\n    [\r\n      {\r\n        \"idProducto\":1\r\n      },\r\n      {\r\n        \"idProducto\":2\r\n      }\r\n    ]\r\n  }\r\n "
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/tarjetaRegalo/2",
+					"request": {
+						"url": "http://localhost:3000/tarjetaRegalo/2",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"¡Feliz Aniversario AURONPLAY ALV!\",\r\n    \"mensaje\":\"Que las navidades son duras borja?\",\r\n    \"plantilla\":\"tarjeta tipo libro chido\",\r\n    \"cupones\":\r\n    [\r\n      {\r\n        \"idCupon\":1\r\n      }\r\n    ]\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/tarjetaRegalo",
+					"request": {
+						"url": "http://localhost:3000/tarjetaRegalo",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\t{\n        \"titulo\": \"¡Feliz fin de desarrollo!\",\n        \"mensaje\": \"hackerman este men no supo\",\n        \"imagenes\": [\n            {\n                \"url\": \"https://i2.wp.com/hybridtechcar.com/wp-content/uploads/2019/01/download-1-44.jpg?w=960&ssl=1\"\n            },\n            {\n                \"url\": \"https://pbs.twimg.com/media/DvX3iU2X0AAwOLU.jpg\"\n            }\n        ],\n        \"plantilla\": \"tarjeta tipo libro feo\",\n        \"cupones\": [\n            {\n                \"idCupon\": 1\n            }\n        ],\n        \"productos\": [\n            {\n                \"idProducto\": 1\n            },\n            {\n                \"idProducto\": 2\n            }\n        ]\n    }"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/tarjetaRegalo/1",
+					"request": {
+						"url": "http://localhost:3000/tarjetaRegalo/1",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Promocion",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:3000/promocion",
+					"request": {
+						"url": "http://localhost:3000/promocion",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/promocion/2",
+					"request": {
+						"url": "http://localhost:3000/promocion/2",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"CiberLunes\",\n    \"fechaDeInicio\": \"01/12/2019T01:00\",\n    \"fechaDeFin\": \"01/12/2019T23:59\",\n    \"marcas\": [\n        {\n            \"idMarca\": 1\n        }\n    ],\n    \"idTienda\": 1\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/promocion/2",
+					"request": {
+						"url": "http://localhost:3000/promocion/2",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"CiberLunes\",\n    \"fechaDeInicio\": \"01/12/2019T01:00\",\n    \"fechaDeFin\": \"01/12/2019T23:59\",\n    \"marcas\": [\n        {\n            \"idMarca\": 1\n        }\n    ],\n    \"idTienda\": 1\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/promocion",
+					"request": {
+						"url": "http://localhost:3000/promocion",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"CiberMonday\",\n    \"fechaDeInicio\": \"29/11/2019T01:00\",\n    \"fechaDeFin\": \"01/12/2019T23:59\",\n    \"marcas\": [\n        {\n            \"idMarca\": 1\n        },\n        {\n            \"idMarca\": 2\n        }\n    ],\n    \"idTienda\": 2\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/promocion",
+					"request": {
+						"url": "http://localhost:3000/promocion/1",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"CiberMonday\",\n    \"fechaDeInicio\": \"29/11/2019T01:00\",\n    \"fechaDeFin\": \"01/12/2019T23:59\",\n    \"marcas\": [\n        {\n            \"idMarca\": 1\n        },\n        {\n            \"idMarca\": 2\n        }\n    ],\n    \"idTienda\": 2\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Producto",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:3000/producto",
+					"request": {
+						"url": "http://localhost:3000/producto",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"CiberMonday\",\n    \"fechaDeInicio\": \"29/11/2019T01:00\",\n    \"fechaDeFin\": \"01/12/2019T23:59\",\n    \"marcas\": [\n        {\n            \"idMarca\": 1\n        },\n        {\n            \"idMarca\": 2\n        }\n    ],\n    \"idTienda\": 2\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/producto/2",
+					"request": {
+						"url": "http://localhost:3000/producto/2",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Jean 911 Levi's Negro Piel Durazno\",\n    \"clasificacion\": \"Ropa casual\",\n    \"talla\": \"W31 L32\",\n    \"precio\": \"COP280000\",\n    \"cantidadDisponible\": 340\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/producto/2",
+					"request": {
+						"url": "http://localhost:3000/producto/2",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Jean 911 Levi's Negro Piel Durazno\",\n    \"clasificacion\": \"Ropa casual\",\n    \"talla\": \"W31 L32\",\n    \"precio\": \"COP280000\",\n    \"cantidadDisponible\": 340\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/producto",
+					"request": {
+						"url": "http://localhost:3000/producto",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Jean 911 Levi's Negro Piel Durazno\",\n    \"clasificacion\": \"Ropa casual\",\n    \"talla\": \"W31 L32\",\n    \"precio\": \"COP280000\",\n    \"cantidadDisponible\": 340\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/producto/1",
+					"request": {
+						"url": "http://localhost:3000/producto/1",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Jean 911 Levi's Negro Piel Durazno\",\n    \"clasificacion\": \"Ropa casual\",\n    \"talla\": \"W31 L32\",\n    \"precio\": \"COP280000\",\n    \"cantidadDisponible\": 340\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,203 @@
+{
+	"id": "115dda74-5e58-3202-d3dd-78ebe817bf99",
+	"name": "Pruebas Marca",
+	"description": "",
+	"order": [
+		"6c6ad797-edea-acc1-78a7-c56b9296f288",
+		"66c8ac41-505f-4a58-6c92-e6f4de761bff",
+		"2d8094b2-d742-548e-3732-66aa143420e6",
+		"0753fb05-acb1-b275-8469-053b656ae1b0",
+		"3df98aca-1d42-ed32-8a61-0f4b953b8940"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1551653515801,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "0753fb05-acb1-b275-8469-053b656ae1b0",
+			"headers": "Content-Type: application/json\nAuthorization: Basic Og==\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic Og==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/marcas/2",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Exito\"]=responseCode.code==200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1551654746389,
+			"name": "PUT",
+			"description": "",
+			"collectionId": "115dda74-5e58-3202-d3dd-78ebe817bf99",
+			"responses": [],
+			"rawModeData": "\n    {\n        \n        \"nombre\": \"Toto\",\n        \"origen\": \"Colombia\",\n        \"clasificacion\": \"maletas,ropa,accesorios\",\n        \"descripcion\": \"Marca de ropa, accesorios y maletas de costo medio\",\n        \"productos\": [\n            {\n                \"idProducto\": 3\n            },\n            {\n                \"idProducto\": 5\n            }\n        ]\n    }"
+		},
+		{
+			"id": "2d8094b2-d742-548e-3732-66aa143420e6",
+			"headers": "Content-Type: application/json\nAuthorization: Basic Og==\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic Og==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/marcas",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "115dda74-5e58-3202-d3dd-78ebe817bf99",
+			"data": [],
+			"dataMode": "raw",
+			"name": "POST",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1551653837382,
+			"version": 2,
+			"responses": [],
+			"tests": "tests[\"Exito\"]=responseCode.code==200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \"id\": 3,\n    \"nombre\": \"Gucci\",\n    \"origen\": \"Italia\",\n    \"clasificacion\": \"ropa,accesorios\",\n    \"descripcion\": \"Marca de ropa y accesorios de lujo\",\n    \"productos\": [\n        {\n            \"idProducto\": 2\n        },\n        {\n            \"idProducto\": 4\n        }\n    ]\n}"
+		},
+		{
+			"id": "3df98aca-1d42-ed32-8a61-0f4b953b8940",
+			"headers": "Content-Type: application/json\nAuthorization: Basic Og==\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic Og==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/marcas/3",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "115dda74-5e58-3202-d3dd-78ebe817bf99",
+			"data": [],
+			"dataMode": "raw",
+			"name": "DELETE",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1551653995129,
+			"version": 2,
+			"responses": [],
+			"tests": "tests[\"Exito\"]=responseCode.code==200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "\n    {\n        \n        \"nombre\": \"Toto\",\n        \"origen\": \"Colombia\",\n        \"clasificacion\": \"maletas,ropa,accesorios\",\n        \"descripcion\": \"Marca de ropa, accesorios y maletas de costo medio\",\n        \"productos\": [\n            {\n                \"idProducto\": 4\n            },\n            {\n                \"idProducto\": 3\n            }\n        ]\n    }"
+		},
+		{
+			"id": "66c8ac41-505f-4a58-6c92-e6f4de761bff",
+			"headers": "Content-Type: application/json\nAuthorization: Basic Og==\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic Og==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/marcas/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "115dda74-5e58-3202-d3dd-78ebe817bf99",
+			"data": [],
+			"dataMode": "raw",
+			"name": "GET/DETALLE",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1551653749435,
+			"version": 2,
+			"responses": [],
+			"tests": "tests[\"Exito\"]=responseCode.code==200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n        \n        \"nombre\": \"Falabella\",\n        \"productos\": [\n            {\n                \"idProducto\": 2\n            },\n            {\n                \"idProducto\": 4\n            }\n        ],\n        \"direccion\": \"Calle 170 #67-65\",\n        \"marcas\": [\n            {\n                \"idMarca\": 1\n            },\n            {\n                \"idMarca\": 5\n            }\n        ],\n        \"promociones\": [\n            {\n                \"idPromocion\": 1\n            },\n            {\n                \"idPromocion\": 2\n            }\n        ]\n    }"
+		},
+		{
+			"id": "6c6ad797-edea-acc1-78a7-c56b9296f288",
+			"headers": "Content-Type: application/json\nAuthorization: Basic Og==\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic Og==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/marcas",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "115dda74-5e58-3202-d3dd-78ebe817bf99",
+			"data": [],
+			"dataMode": "raw",
+			"name": "GET",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1551653725303,
+			"version": 2,
+			"responses": [],
+			"tests": "tests[\"Exito\"]=responseCode.code==200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n        \n        \"nombre\": \"Falabella\",\n        \"productos\": [\n            {\n                \"idProducto\": 2\n            },\n            {\n                \"idProducto\": 4\n            }\n        ],\n        \"direccion\": \"Calle 170 #67-65\",\n        \"marcas\": [\n            {\n                \"idMarca\": 1\n            },\n            {\n                \"idMarca\": 5\n            }\n        ],\n        \"promociones\": [\n            {\n                \"idPromocion\": 1\n            },\n            {\n                \"idPromocion\": 2\n            }\n        ]\n    }"
+		}
+	]
+}

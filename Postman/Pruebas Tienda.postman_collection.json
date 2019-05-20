@@ -1,0 +1,203 @@
+{
+	"id": "fec154d4-ecd3-65f0-d975-6397113f37e3",
+	"name": "Pruebas Tienda",
+	"description": "",
+	"order": [
+		"6ac33295-10df-12a2-5ce6-cfbf4cc5f564",
+		"7e6b9ad1-5ccd-343d-df6b-ef11e5c9b05e",
+		"958d1dbe-7cdf-00d2-8996-f7b169dcb47a",
+		"0a737f1a-d670-7612-1377-10cb7e2b1d17",
+		"5b187581-6b55-3bc5-ae8d-d5169bda185a"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1551652064032,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "0a737f1a-d670-7612-1377-10cb7e2b1d17",
+			"headers": "Content-Type: application/json\nAuthorization: Basic Og==\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic Og==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/tiendas/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Exito\"]=responseCode.code==200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1551654835221,
+			"name": "PUT",
+			"description": "",
+			"collectionId": "fec154d4-ecd3-65f0-d975-6397113f37e3",
+			"responses": [],
+			"rawModeData": "{\n        \n        \"nombre\": \"Falabella\",\n        \"productos\": [\n            {\n                \"idProducto\": 2\n            },\n            {\n                \"idProducto\": 5\n            }\n        ],\n        \"direccion\": \"Calle 170 #40-65\",\n        \"marcas\": [\n            {\n                \"idMarca\": 1\n            },\n            {\n                \"idMarca\": 5\n            }\n        ],\n        \"promociones\": [\n            {\n                \"idPromocion\": 1\n            },\n            {\n                \"idPromocion\": 3\n            }\n        ]\n    }"
+		},
+		{
+			"id": "5b187581-6b55-3bc5-ae8d-d5169bda185a",
+			"headers": "Content-Type: application/json\nAuthorization: Basic Og==\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic Og==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/tiendas/3",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "fec154d4-ecd3-65f0-d975-6397113f37e3",
+			"data": [],
+			"dataMode": "raw",
+			"name": "DELETE",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1551653309296,
+			"version": 2,
+			"responses": [],
+			"tests": "tests[\"Exito\"]=responseCode.code==200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n        \n        \"nombre\": \"Falabella\",\n        \"productos\": [\n            {\n                \"idProducto\": 4\n            },\n            {\n                \"idProducto\": 6\n            }\n        ],\n        \"direccion\": \"Calle 120 #40-65\",\n        \"marcas\": [\n            {\n                \"idMarca\": 1\n            },\n            {\n                \"idMarca\": 5\n            }\n        ],\n        \"promociones\": [\n            {\n                \"idPromocion\": 1\n            },\n            {\n                \"idPromocion\": 2\n            }\n        ]\n    }"
+		},
+		{
+			"id": "6ac33295-10df-12a2-5ce6-cfbf4cc5f564",
+			"headers": "Content-Type: application/json\nAuthorization: Basic Og==\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic Og==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/tiendas",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "fec154d4-ecd3-65f0-d975-6397113f37e3",
+			"data": [],
+			"dataMode": "raw",
+			"name": "GET",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1551652885237,
+			"version": 2,
+			"responses": [],
+			"tests": "tests[\"Exito\"]=responseCode.code==200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \n    \"nombre\": \"Jumbo\",\n    \"productos\": [\n        {\n            \"idProducto\": 1\n        },\n        {\n            \"idProducto\": 2\n        }\n    ],\n    \"direccion\": \"Cra 68B #23-12\",\n    \"marcas\": [\n        {\n            \"idMarca\": 1\n        },\n        {\n            \"idMarca\": 2\n        }\n    ],\n    \"promociones\": [\n        {\n            \"idPromocion\": 1\n        },\n        {\n            \"idPromocion\": 2\n        }\n    ]\n}"
+		},
+		{
+			"id": "7e6b9ad1-5ccd-343d-df6b-ef11e5c9b05e",
+			"headers": "Content-Type: application/json\nAuthorization: Basic Og==\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic Og==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/tiendas",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "fec154d4-ecd3-65f0-d975-6397113f37e3",
+			"data": [],
+			"dataMode": "raw",
+			"name": "POST",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1551653004059,
+			"version": 2,
+			"responses": [],
+			"tests": "tests[\"Exito\"]=responseCode.code==200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n        \"id\": 3,\n        \"nombre\": \"Exito\",\n        \"productos\": [\n            {\n                \"idProducto\": 2\n            },\n            {\n                \"idProducto\": 3\n            }\n        ],\n        \"direccion\": \"Calle 140 #19-65\",\n        \"marcas\": [\n            {\n                \"idMarca\": 1\n            },\n            {\n                \"idMarca\": 2\n            }\n        ],\n        \"promociones\": [\n            {\n                \"idPromocion\": 1\n            },\n            {\n                \"idPromocion\": 2\n            }\n        ]\n    }"
+		},
+		{
+			"id": "958d1dbe-7cdf-00d2-8996-f7b169dcb47a",
+			"headers": "Content-Type: application/json\nAuthorization: Basic Og==\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic Og==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/tiendas/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "fec154d4-ecd3-65f0-d975-6397113f37e3",
+			"data": [],
+			"dataMode": "raw",
+			"name": "GET/DETALLE",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1551653065826,
+			"version": 2,
+			"responses": [],
+			"tests": "tests[\"Exito\"]=responseCode.code==200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n        \"id\": 3,\n        \"nombre\": \"Exito\",\n        \"productos\": [\n            {\n                \"idProducto\": 2\n            },\n            {\n                \"idProducto\": 3\n            }\n        ],\n        \"direccion\": \"Calle 140 #19-65\",\n        \"marcas\": [\n            {\n                \"idMarca\": 1\n            },\n            {\n                \"idMarca\": 2\n            }\n        ],\n        \"promociones\": [\n            {\n                \"idPromocion\": 1\n            },\n            {\n                \"idPromocion\": 2\n            }\n        ]\n    }"
+		}
+	]
+}

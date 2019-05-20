@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "nombre": "Madrugon Falabella",
+    "fechaDeInicio":"6/03/2019T05:00",
+    "fechaDeFin":"6/03/2019T11:00",
+    "marcas":
+    [
+      {
+        "idMarca": 1
+      },
+      {
+        "idMarca": 2
+      }
+    ],
+    "idTienda":2
+  },
+  {
+    "id": 2,
+    "nombre": "BlackFriday",
+    "fechaDeInicio":"29/11/2019T01:00",
+    "fechaDeFin":"29/11/2019T23:59",
+    "marcas":
+    [
+      {
+        "idMarca": 1
+      },
+      {
+        "idMarca": 2
+      }
+    ],
+    "idTienda":2
+  }
+]

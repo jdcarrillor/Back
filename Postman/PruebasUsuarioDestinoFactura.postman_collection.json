@@ -1,0 +1,197 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Web",
+		"_postman_id": "2edb9482-8a87-8cd9-2711-1960bb045534",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/usuario",
+			"request": {
+				"url": "http://localhost:3000/usuario",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/usuario",
+			"request": {
+				"url": "http://localhost:3000/usuario",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n    \"id\": 1,\n    \"nombre\": \"Vanessa Huertas\",\n    \"email\":\"tvanessahb203@gmail.com\",\n    \"username\":\"Vanessita\",\n    \"password\":\"vane1234\",\n    \"compras\":\n    [\n      {\n        \"cantidad\":100\n      },\n      {\n        \"cantidad\":21\n      }\n    ],\n    \"facturas\":\n    [\n      {\n        \"idFactura\":1\n      },\n      {\n        \"idFactura\":2\n      }\n    ]\n  }\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/usuario",
+			"request": {
+				"url": "http://localhost:3000/usuario/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n    \"id\": 1,\n    \"nombre\": \"Vanessa Bolaños\",\n    \"email\":\"tvanessahb203@gmail.com\",\n    \"username\":\"Vanessita\",\n    \"password\":\"vane1234\",\n    \"compras\":\n    [\n      {\n        \"cantidad\":30\n      },\n      {\n        \"cantidad\":50\n      }\n    ],\n    \"facturas\":\n    [\n      {\n        \"idFactura\":1\n      },\n      {\n        \"idFactura\":2\n      }\n    ]\n  }\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/usuario/1",
+			"request": {
+				"url": "http://localhost:3000/usuario/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/destino",
+			"request": {
+				"url": "http://localhost:3000/destino",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/destino",
+			"request": {
+				"url": "http://localhost:3000/destino",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n    \"id\": 3,\n    \"ciudad\": \"Bogota\",\n    \"direccion\":\"Externado\",\n    \"email\":\"tvanessahb203@gmail.com\",\n    \"fisica\": \"false\"\n  }\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/destino",
+			"request": {
+				"url": "http://localhost:3000/destino/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n    \"id\": 1,\n    \"ciudad\": \"Bogota\",\n    \"direccion\":\"Uniandes\",\n    \"email\":\"tvanessahb203@gmail.com\",\n    \"fisica\": \"false\"\n  }\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/destino/1",
+			"request": {
+				"url": "http://localhost:3000/destino/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/factura",
+			"request": {
+				"url": "http://localhost:3000/factura",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/factura",
+			"request": {
+				"url": "http://localhost:3000/factura",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"id\": 1,\r\n        \"idDestino\": 1,\r\n        \"idTienda\": 1,\r\n        \"idTarjetaRegalo\": 1,\r\n        \"valorCompra\": 30000,\r\n        \"formaDePago\":\"Tarjeta credito\",\r\n        \"fechaCompra\":\"02/03/2019\",\r\n        \"destino\":\"Bogota\",\r\n        \"tienda\":\"Cosechas\",\r\n        \"tarjetaRegalo\":\"Amigos\"\r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"idDestino\": 2,\r\n        \"idTienda\": 2,\r\n        \"idTarjetaRegalo\": 2,\r\n        \"valorCompra\": 87000,\r\n        \"formaDePago\":\"Efectivo\",\r\n        \"fechaCompra\":\"20/02/2019\",\r\n        \"destino\":\"Cali\",\r\n        \"tienda\":\"BookStore\",\r\n        \"tarjetaRegalo\":\"Agradecimiento\"\r\n    }\r\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/factura",
+			"request": {
+				"url": "http://localhost:3000/factura/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"id\": 1,\r\n        \"idDestino\": 1,\r\n        \"idTienda\": 1,\r\n        \"idTarjetaRegalo\": 1,\r\n        \"valorCompra\": 30000,\r\n        \"formaDePago\":\"Tarjeta credito\",\r\n        \"fechaCompra\":\"02/03/2019\",\r\n        \"destino\":\"Bogota\",\r\n        \"tienda\":\"Cosechas\",\r\n        \"tarjetaRegalo\":\"Amigos\"\r\n    }\r\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/factura/1",
+			"request": {
+				"url": "http://localhost:3000/factura/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

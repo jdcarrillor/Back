@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "nombre": "Camiseta polo",
+    "clasificacion":"Ropa casual",
+    "talla":"S",
+    "precio":"COP130000",
+    "cantidadDisponible":220
+  },
+  {
+    "id": 2,
+    "nombre": "Jean 911 Levi's",
+    "clasificacion":"Ropa casual",
+    "talla":"W32 L32",
+    "precio":"COP130000",
+    "cantidadDisponible":220
+  }
+]

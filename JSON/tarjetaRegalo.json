@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "titulo": "¡Feliz Cumpleaños Ricadito!",
+    "mensaje":"Gracias por animarnos bailando chino, nada mejor que tu aparicion en el maincrah.",
+    "imagenes":
+    [
+      {
+        "url": "https://i2.wp.com/hybridtechcar.com/wp-content/uploads/2019/01/download-1-44.jpg?w=960&ssl=1"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/DvX3iU2X0AAwOLU.jpg"
+      }
+    ],
+    "plantilla":"tarjeta plegable de 2 caras",
+    "cupones":
+    [
+      {
+        "idCupon":1
+      },
+      {
+        "idCupon":2
+      }
+    ],
+    "productos":
+    [
+      {
+        "idProducto":1
+      },
+      {
+        "idProducto":2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "¡Feliz Aniversario BBCITA UA!",
+    "mensaje":"Gracias por tantos años juntos ggg",
+    "imagenes":
+    [
+      {
+        "url": "https://i2.wp.com/hybridtechcar.com/wp-content/uploads/2019/01/download-1-44.jpg?w=960&ssl=1"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/DvX3iU2X0AAwOLU.jpg"
+      }
+    ],
+    "plantilla":"tarjeta tipo libro con solapa",
+    "cupones":
+    [
+      {
+        "idCupon":1
+      },
+      {
+        "idCupon":2
+      }
+    ],
+    "productos":
+    [
+      {
+        "idProducto":1
+      },
+      {
+        "idProducto":2
+      }
+    ]
+  }
+]
