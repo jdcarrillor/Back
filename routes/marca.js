@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const jfs = require("jsonfile");
+var middleware = require("../middleware.js");
 
 // get de todas las tarjetas
 router.get('/', function (req, res) {
@@ -24,7 +25,7 @@ router.get('/:idMarca', function (req, res) {
   res.send(temp);
 });
 //post de la tarjeta
-router.post('/', function (req, res){
+router.post('/',middleware.checkToken, function (req, res){
   let dataJSON=jfs.readFileSync('./JSON/marca.json','utf8')
   let idTemp=1;
   dataJSON.forEach(conteo);
@@ -45,7 +46,7 @@ router.post('/', function (req, res){
   res.send(JSON.parse(data))
 });
 //put de la tarjeta con id pasado por parametro
-router.put('/:idMarca', function (req, res) {
+router.put('/:idMarca',middleware.checkToken, function (req, res) {
   var idmarca = req.params.idMarca;
   var inp=req.body;
   console.log(idmarca);
@@ -78,7 +79,7 @@ router.put('/:idMarca', function (req, res) {
   res.send(data)
 })
 //delete de la tarjeta con id pasado por parametro
-router.delete('/:idMarca', function (req, res) {
+router.delete('/:idMarca',middleware.checkToken, function (req, res) {
   var idmarca = req.params.idMarca;
   let data= jfs.readFileSync('./JSON/marca.json','utf8');
   let final =new Array();

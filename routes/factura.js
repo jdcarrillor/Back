@@ -4,7 +4,7 @@ const jfs = require("jsonfile");
 var middleware = require("../middleware.js");
 
 /*GET factura */
-router.get('/',middleware.checkToken,function (req, res) {
+router.get('/',function (req, res) {
   let data= jfs.readFileSync('./JSON/factura.json','utf8');
   console.log(data);
   res.send(data);

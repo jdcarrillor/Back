@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const jfs = require("jsonfile");
-
+var middleware = require("../middleware.js");
 // get de todas las tiendas
 router.get('/', function (req, res) {
   let data= jfs.readFileSync('./JSON/tienda.json','utf8');
@@ -24,7 +24,7 @@ router.get('/:idTienda', function (req, res) {
   res.send(temp);
 });
 //post de la tienda
-router.post('/', function (req, res){
+router.post('/', middleware.checkToken,function (req, res){
   let dataJSON=jfs.readFileSync('./JSON/tienda.json','utf8')
   let idTemp=1;
   dataJSON.forEach(conteo);
@@ -45,7 +45,7 @@ router.post('/', function (req, res){
   res.send(JSON.parse(data))
 });
 //put de la tarjeta con id pasado por parametro
-router.put('/:idTienda', function (req, res) {
+router.put('/:idTienda',middleware.checkToken, function (req, res) {
   var idtienda = req.params.idTienda;
   var inp=req.body;
   console.log(idtienda);
@@ -78,7 +78,7 @@ router.put('/:idTienda', function (req, res) {
   res.send(data)
 })
 //delete de la tarjeta con id pasado por parametro
-router.delete('/:idTienda', function (req, res) {
+router.delete('/:idTienda',middleware.checkToken, function (req, res) {
   var idtienda = req.params.idTienda;
   let data= jfs.readFileSync('./JSON/tienda.json','utf8');
   let final =new Array();

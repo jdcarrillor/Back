@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const jfs = require("jsonfile");
+var middleware = require("../middleware.js");
 
 /* GET destino*/
 router.get('/', function (req, res) {
@@ -25,7 +26,7 @@ router.get('/:idDestino', function (req, res) {
   res.send(temp);
 });
 /*POST destino */
-router.post('/', function (req, res){
+router.post('/', middleware.checkToken,function (req, res){
   let dataJSON=jfs.readFileSync('./JSON/destino.json','utf8')
   let idTemp=1;
   dataJSON.forEach(conteo);
@@ -46,7 +47,7 @@ router.post('/', function (req, res){
   res.send(JSON.parse(data))
 });
 /*PUT destino por id */
-router.put('/:idDestino', function (req, res) {
+router.put('/:idDestino',middleware.checkToken, function (req, res) {
   var iddestino = req.params.idDestino;
   var inp=req.body;
   console.log(iddestino);
@@ -78,7 +79,7 @@ router.put('/:idDestino', function (req, res) {
   res.send(data)
 })
 /*DELETE destino por id */
-router.delete('/:idDestino', function (req, res) {
+router.delete('/:idDestino',middleware.checkToken, function (req, res) {
   var iddestino = req.params.idTarjeta;
   let data= jfs.readFileSync('./JSON/destino.json','utf8');
   let final =new Array();

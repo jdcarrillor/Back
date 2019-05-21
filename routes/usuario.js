@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET usuario por id*/
-router.get('/:idUsuario', middleware.checkToken , function (req, res) {
+router.get('/:idUsuario' , function (req, res) {
     var idusuario = req.params.idUsuario;
     var temp;
     console.log(idusuario);

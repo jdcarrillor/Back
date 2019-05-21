@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const jfs = require("jsonfile");
+var middleware = require("../middleware.js");
 
 // get de todos los productos
 router.get('/', function (req, res) {
@@ -24,7 +25,7 @@ router.get('/:idProducto', function (req, res) {
   res.send(temp);
 });
 //post del producto
-router.post('/', function (req, res){
+router.post('/',middleware.checkToken, function (req, res){
   let dataJSON=jfs.readFileSync('./JSON/producto.json','utf8')
   let idTemp=1;
   dataJSON.forEach(conteo);
@@ -45,7 +46,7 @@ router.post('/', function (req, res){
   res.send(JSON.parse(data))
 });
 //put del producto con id pasado por parametro
-router.put('/:idProducto', function (req, res) {
+router.put('/:idProducto',middleware.checkToken, function (req, res) {
   var idproducto = req.params.idProducto;
   var inp=req.body;
   console.log(idproducto);
@@ -80,7 +81,7 @@ router.put('/:idProducto', function (req, res) {
   res.send(data)
 })
 //delete del producto con id pasado por parametro
-router.delete('/:idProducto', function (req, res) {
+router.delete('/:idProducto',middleware.checkToken, function (req, res) {
   var idproducto = req.params.idProducto;
   let data= jfs.readFileSync('./JSON/producto.json','utf8');
   let final =new Array();

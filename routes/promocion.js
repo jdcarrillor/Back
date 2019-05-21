@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const jfs = require("jsonfile");
+var middleware = require("../middleware.js");
 
 // get de todas las promociones
 router.get('/', function (req, res) {
@@ -24,7 +25,7 @@ router.get('/:idPromocion', function (req, res) {
   res.send(temp);
 });
 //post de la promocion
-router.post('/', function (req, res){
+router.post('/',middleware.checkToken, function (req, res){
   let dataJSON=jfs.readFileSync('./JSON/promocion.json','utf8')
   let idTemp=1;
   dataJSON.forEach(conteo);
@@ -45,7 +46,7 @@ router.post('/', function (req, res){
   res.send(JSON.parse(data))
 });
 //put de la promocion con id pasado por parametro
-router.put('/:idPromocion', function (req, res) {
+router.put('/:idPromocion',middleware.checkToken, function (req, res) {
   var idpromocion = req.params.idPromocion;
   var inp=req.body;
   console.log(idpromocion);
@@ -77,7 +78,7 @@ router.put('/:idPromocion', function (req, res) {
   res.send(data)
 })
 //delete de la promocion con id pasado por parametro
-router.delete('/:idPromocion', function (req, res) {
+router.delete('/:idPromocion',middleware.checkToken, function (req, res) {
   var idpromocion = req.params.idPromocion;
   let data= jfs.readFileSync('./JSON/promocion.json','utf8');
   let final =new Array();
