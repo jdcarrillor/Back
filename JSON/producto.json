@@ -1,18 +1,1 @@
-[
-  {
-    "id": 1,
-    "nombre": "Camiseta polo",
-    "clasificacion":"Ropa casual",
-    "talla":"S",
-    "precio":"COP130000",
-    "cantidadDisponible":220
-  },
-  {
-    "id": 2,
-    "nombre": "Jean 911 Levi's",
-    "clasificacion":"Ropa casual",
-    "talla":"W32 L32",
-    "precio":"COP130000",
-    "cantidadDisponible":220
-  }
-]
+[{"id":1,"src":"https://mlstaticquic-a.akamaihd.net/remeras-polo-ralph-lauren-nueva-original-con-etiquetas-D_NQ_NP_780908-MLU28571117481_112018-F.jpg","nombre":"Camiseta Polo Ralph Lauren","clasificacion":"Ropa casual","talla":"S","precio":"COP 130,000","cantidadDisponible":"23"},{"id":2,"src":"https://lsco.scene7.com/is/image/lsco/Levis/clothing/727750000-front-pdp.jpg?$grid_desktop_bottoms$","nombre":"Jean 911 Levi's","clasificacion":"Ropa casual","talla":"W32 L32","precio":"COP 130,000","cantidadDisponible":220},{"id":3,"src":"https://i.pinimg.com/564x/69/01/0f/69010f1e4ed3036c3aa0a5ab7beb9ec9.jpg","nombre":"Tenis Reebok","clasificacion":"Tenis deportivos","talla":"42US","precio":"COP 230,000","cantidadDisponible":220},{"id":4,"src":"https://i.pinimg.com/564x/97/91/24/979124090c9fb43bc4e2cf9c40d2a33b.jpg","nombre":"Camiseta Polo Tommy Hilfiger ","clasificacion":"Ropa casual","talla":"S","precio":"COP 130,000","cantidadDisponible":220},{"id":5,"src":"https://i.pinimg.com/564x/f8/42/f2/f842f27e18cfdef92ab20a1ac9778960.jpg","nombre":"American Eagle Jogger","clasificacion":"Ropa casual","talla":"W32 L32","precio":"COP 130,000","cantidadDisponible":220},{"id":6,"src":"https://i.pinimg.com/564x/ad/7b/f3/ad7bf3a17cd4e4b79da074cc66d0d6b4.jpg?b=t","nombre":"Yezzy Boost 700","clasificacion":"Ropa casual","talla":"42US","precio":"COP 430,000","cantidadDisponible":220},{"id":7,"src":"https://i.pinimg.com/564x/30/30/63/30306324f1f6e332a68f433a1232297a.jpg","nombre":"Camiseta Fred Perry","clasificacion":"Ropa casual","talla":"S","precio":"COP 130,000","cantidadDisponible":220},{"id":8,"src":"https://i.pinimg.com/564x/94/5d/ff/945dffa24d8a9d04024b829c64f75aa4.jpg","nombre":"Adidas SweatPants","clasificacion":"Ropa deportiva","talla":"W32 L32","precio":"COP 130,000","cantidadDisponible":220},{"id":9,"src":"https://i.pinimg.com/564x/15/67/02/15670236bf986cfeab407583c1d4a5e6.jpg","nombre":"Balenciaga","clasificacion":"Ropa casual","talla":"42US","precio":"COP 930,000","cantidadDisponible":220},{"nombre":"Polo Lacoste","src":"https://i.pinimg.com/564x/a7/3a/42/a73a427de211711694fd1bcdf1673409.jpg","clasificacion":"Ropa Casual","talla":"M","precio":"COP 193,000","cantidadDisponible":"453","id":10},{"nombre":"Mango Slim-Fit Dark Wash Jan Jeans","src":"https://i.pinimg.com/564x/67/a8/2a/67a82a780ea6797077ad1a14b9dd362a.jpg","clasificacion":"Ropa Casual","talla":"W34","precio":"COP 243,000","cantidadDisponible":"1050","id":11},{"nombre":"Converse Burgundy Chuck Ox - Red","src":"https://i.pinimg.com/564x/56/46/06/5646060fbec237917afadd2b3cd5dbca.jpg","clasificacion":"Ropa Casual","talla":"US42","precio":"COP 110,000","cantidadDisponible":"953","id":12},{"nombre":"Running UA HOVR Phantom Sneakers","src":"https://underarmour.scene7.com/is/image/Underarmour/V5ProdWithBadge?rp=standard-10pad|pdpZoomDesktop&scl=0.50&fmt=jpg&qlt=85&resMode=sharp2&cache=on,off&bgc=f0f0f0&rect=0,0,1836,1950&$p_pos=475,480&$p_size=950,950&extendN=0,0,0,0&$p_src=is{Underarmour/3020972-102_DEFAULT}","clasificacion":"Zapatos","talla":"US43","precio":"COP 355,900","cantidadDisponible":"20","id":13}]

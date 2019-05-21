@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
 const jfs = require("jsonfile");
+var middleware = require("../middleware.js");
 
 /*GET factura */
-router.get('/', function (req, res) {
+router.get('/',middleware.checkToken,function (req, res) {
   let data= jfs.readFileSync('./JSON/factura.json','utf8');
   console.log(data);
   res.send(data);
@@ -26,7 +27,7 @@ router.get('/:idFactura', function (req, res) {
 });
 
 /*POST factura */
-router.post('/', function (req, res){
+router.post('/',middleware.checkToken, function (req, res){
   let dataJSON=jfs.readFileSync('./JSON/factura.json','utf8')
   let idTemp=1;
   dataJSON.forEach(conteo);
@@ -48,7 +49,7 @@ router.post('/', function (req, res){
 });
 
 /*PUT factura por id */
-router.put('/:idFactura', function (req, res) {
+router.put('/:idFactura', middleware.checkToken,function (req, res) {
   var idfactura = req.params.idFactura;
   var inp=req.body;
   console.log(idfactura);
@@ -85,6 +86,9 @@ router.put('/:idFactura', function (req, res) {
       if(inp.tarjetaRegalo!=null){
         value.tarjetaRegalo=inp.tarjetaRegalo;
       }
+      if(inp.src!=null){
+        value.src=inp.src;
+      }
     }
   }
   jfs.writeFile('./JSON/factura.json', data, function (err) {
@@ -94,7 +98,7 @@ router.put('/:idFactura', function (req, res) {
 })
 
 /*DELETE factura por id */
-router.delete('/:idFactura', function (req, res) {
+router.delete('/:idFactura',middleware.checkToken, function (req, res) {
   var idfactura = req.params.idFactura;
   let data= jfs.readFileSync('./JSON/factura.json','utf8');
   let final =new Array();

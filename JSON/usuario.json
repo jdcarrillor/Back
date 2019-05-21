@@ -1,1 +1,62 @@
-[[{"id":2,"nombre":"Joaquin Barrera","email":"joaquinbarrera@gmail.com","username":"Joaquin","password":"barrera1234","compras":[{"cantidad":20},{"cantidad":30}],"facturas":[{"idFactura":3},{"idFactura":4}]}],[{"id":1,"nombre":"Vanessa Huertas","email":"tvanessahb203@gmail.com","username":"Vanessita","password":"vane1234","compras":[{"cantidad":100},{"cantidad":21}],"facturas":[{"idFactura":1},{"idFactura":2}]}]]
+[
+    {
+    "id":1,
+    "src":"https://www.myherodesign.com/wp-content/uploads/2016/06/Asian_Female_Suspicious.gif",
+    "nombre":"Vanessa Huertas",
+    "email":"tvanessahb203@gmail.com",
+    "username":"vanessita",
+    "password":"vane1234",
+    "compras":[{"cantidad":100},{"cantidad":21}],
+    "facturas":[{"idFactura":1 },{"idFactura":2}]
+},
+{
+    "id":2,
+    "src":"https://www.myherodesign.com/wp-content/uploads/2016/06/Indian_Man_Suspicious.gif",
+    "nombre":"Santiago Matiz",
+    "email":"santiagomatiz@gmail.com",
+    "username":"santiago",
+    "password":"matiz1234",
+    "compras":[{"cantidad":20},{"cantidad":30}],
+    "facturas":[{"idFactura":3},{"idFactura":4}]
+},
+{
+    "id":3,
+    "src":"https://www.myherodesign.com/wp-content/uploads/2016/06/Asian_Male_Confused.gif",
+    "nombre":"Daniel Brawn",
+    "email":"danielbrawn@gmail.com",
+    "username":"daniel",
+    "password":"brawn1234",
+    "compras":[{"cantidad":3},{"cantidad":30}],
+    "facturas":[{"idFactura":1},{"idFactura":4}]
+},
+{
+    "id":4,
+    "src":"https://www.myherodesign.com/wp-content/uploads/2016/06/Black_Female_Sad.gif",
+    "nombre":"Sara González",
+    "email":"saragonzalez@gmail.com",
+    "username":"sara",
+    "password":"gonzalez1234",
+    "compras":[{"cantidad":3},{"cantidad":30}],
+    "facturas":[{"idFactura":2},{"idFactura":3}]
+},
+{
+    "id":5,
+    "src":"https://www.myherodesign.com/wp-content/uploads/2016/06/Hispanic_Female_Suspicious-1.gif",
+    "nombre":"Natalia Peralta",
+    "email":"nataliaperalta@gmail.com",
+    "username":"natalia",
+    "password":"peralta1234",
+    "compras":[{"cantidad":3},{"cantidad":30}],
+    "facturas":[{"idFactura":1},{"idFactura":3}]
+},
+{
+    "id":6,
+    "src":"https://www.myherodesign.com/wp-content/uploads/2016/06/Black_Man_Sad.gif",
+    "nombre":"Sebastián Rodríguez",
+    "email":"sebastianrodriguez@gmail.com",
+    "username":"sebastian",
+    "password":"rodriguez1234",
+    "compras":[{"cantidad":3},{"cantidad":30}],
+    "facturas":[{"idFactura":2},{"idFactura":4}]
+}
+]

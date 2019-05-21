@@ -1,26 +1,58 @@
-[[
+[
     {
         "id": 1,
+        "src":"https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/06/06123442/Credit-Card-PNG-Free-Download.png",
+        "valorCompra": 30000,
+        "formaDePago":"Tarjeta de crédito",
+        "fechaCompra":"02/03/2019",
+        "destino":"Bogotá",
+        "tienda":"Cosechas",
+        "tarjetaRegalo":"Amigos",
+        "srcTarjeta":"https://www.pngarts.com/files/1/Friends-Download-Transparent-PNG-Image.png",
         "idDestino": 1,
         "idTienda": 1,
-        "idTarjetaRegalo": 1,
-        "valorCompra": 30000,
-        "formaDePago":"Tarjeta credito",
-        "fechaCompra":"02/03/2019",
-        "destino":"Bogota",
-        "tienda":"Cosechas",
-        "tarjetaRegalo":"Amigos"
+        "idTarjetaRegalo": 1
     },
     {
         "id": 2,
-        "idDestino": 2,
-        "idTienda": 2,
-        "idTarjetaRegalo": 2,
+        "src":"https://infimg.com/bimg/2017/07/posts-patrocinados.png",
         "valorCompra": 87000,
         "formaDePago":"Efectivo",
         "fechaCompra":"20/02/2019",
         "destino":"Cali",
         "tienda":"BookStore",
-        "tarjetaRegalo":"Agradecimiento"
+        "tarjetaRegalo":"Agradecimiento",
+        "srcTarjeta":"https://mba.americaeconomia.com/sites/mba.americaeconomia.com/files/styles/article_main_image/public/field/image/agree-937898_640.png?itok=UspXSTWE",
+        "idDestino": 2,
+        "idTienda": 2,
+        "idTarjetaRegalo": 2
+    },
+    {
+        "id": 3,
+        "src":"https://infimg.com/bimg/2017/07/posts-patrocinados.png",
+        "valorCompra": 87000,
+        "formaDePago":"Efectivo",
+        "fechaCompra":"20/02/2019",
+        "destino":"Neiva",
+        "tienda":"Reebok",
+        "tarjetaRegalo":"Cumpleaños",
+        "srcTarjeta":"https://www.villagecines.com/images/institucionales/img-cumple.png",
+        "idDestino": 3,
+        "idTienda": 3,
+        "idTarjetaRegalo": 3
+    },
+    {
+        "id": 4,
+        "src":"https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/06/06123442/Credit-Card-PNG-Free-Download.png",
+        "valorCompra": 87000,
+        "formaDePago":"Tarjeta de crédito",
+        "fechaCompra":"20/02/2019",
+        "destino":"Medellín",
+        "tienda":"Tarjetas Maguz",
+        "tarjetaRegalo":"Aniversario",
+        "srcTarjeta":"https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Valentine%27s-Day-PNG/Transparent_Heart_of_Hearts_PNG_Picture.png?m=1434276629",
+        "idDestino": 4,
+        "idTienda": 4,
+        "idTarjetaRegalo": 4
     }
-]]
+]

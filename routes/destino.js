@@ -67,6 +67,9 @@ router.put('/:idDestino', function (req, res) {
       if(inp.fisica!=null){
         value.fisica=inp.fisica;
       }
+      if(inp.src!=null){
+        value.src=inp.src;
+      }
     }
   }
   jfs.writeFile('./JSON/destino.json', data, function (err) {

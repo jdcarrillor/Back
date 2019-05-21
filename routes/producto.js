@@ -57,6 +57,9 @@ router.put('/:idProducto', function (req, res) {
       if(inp.nombre!=null){
         value.nombre=inp.nombre;
       }
+      if(inp.src!=null){
+        value.src=inp.src;
+      }
       if(inp.clasificacion!=null){
         value.clasificacion=inp.clasificacion;
       }

@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const jfs = require("jsonfile");
+var middleware = require("../middleware.js");
 
 // get de todas las tarjetas
 router.get('/', function (req, res) {
@@ -24,7 +25,7 @@ router.get('/:idCupon', function (req, res) {
   res.send(temp);
 });
 //post de la tarjeta
-router.post('/', function (req, res){
+router.post('/',middleware.checkToken, function (req, res){
   let dataJSON=jfs.readFileSync('./JSON/cupon.json','utf8')
   let idTemp=1;
   dataJSON.forEach(conteo);
@@ -45,7 +46,7 @@ router.post('/', function (req, res){
   res.send(JSON.parse(data))
 });
 //put de la tarjeta con id pasado por parametro
-router.put('/:idCupon', function (req, res) {
+router.put('/:idCupon',middleware.checkToken, function (req, res) {
   var idcupon = req.params.idCupon;
   var inp=req.body;
   console.log(idcupon);
@@ -75,7 +76,7 @@ router.put('/:idCupon', function (req, res) {
   res.send(data)
 })
 //delete de la tarjeta con id pasado por parametro
-router.delete('/:idCupon', function (req, res) {
+router.delete('/:idCupon', middleware.checkToken,function (req, res) {
   var idcupon = req.params.idCupon;
   let data= jfs.readFileSync('./JSON/cupon.json','utf8');
   let final =new Array();
