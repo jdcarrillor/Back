@@ -4,7 +4,7 @@ const jfs = require("jsonfile");
 var middleware = require("../middleware.js");
 
 /* GET usuarios. */
-router.get('/',middleware.checkToken, function(req, res, next) {
+router.get('/', function(req, res, next) {
     let data= jfs.readFileSync('./JSON/usuario.json','utf8');
     console.log(data);
     res.send(data);
