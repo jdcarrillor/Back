@@ -31,7 +31,7 @@ router.get('/:idUsuario' , function (req, res) {
   });
 
   /* POST usuario*/
-  router.post('/', middleware.checkToken, function (req, res){
+  router.post('/', function (req, res){
 
     let dataJSON=jfs.readFileSync('./JSON/usuario.json','utf8')
     let idTemp=1;
